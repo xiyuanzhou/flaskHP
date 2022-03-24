@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% with message1 = get_flashed_messages() %}
+    <ul>
+        {% if message1 %}
+            <li>{{ message1[0] }}</li>
+        {% endif %}
+    </ul>
+    {% endwith %}
     <h1>Welcome{{name}}!</h1>
 </head>
 <p>
