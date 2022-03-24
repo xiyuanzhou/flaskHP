@@ -1,6 +1,6 @@
-from app import myObject
+from app import myobj
 
 
-myObject.run()
+myobj.run()
 
 
