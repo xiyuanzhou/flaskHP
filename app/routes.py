@@ -6,7 +6,7 @@ city_names = ['Paris','London', 'Rome', 'Tahiti']
 name = 'Lisa'
 
 @myObject.route('/',methods = ['POST','GET'])
-def hello():
+def home():
     return render_template('home.html',
                            name = name,
                            city_names = city_names,
