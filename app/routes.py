@@ -1,10 +1,10 @@
 from app import myobj
-from flask import render_template, request
+from flask import render_template, request,flash
 
 
 city_names = ['Paris','London', 'Rome', 'Tahiti']
 name = 'Lisa'
-myobj.config['SECRET_KEY'] = '1234'
+myobj.config['SECRET_KEY'] = '888888889'
 
 @myobj.route('/', methods=["GET","POST"])
 def home():
