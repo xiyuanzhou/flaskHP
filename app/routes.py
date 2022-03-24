@@ -9,8 +9,8 @@ myobj.config['SECRET_KEY'] = '1234'
 @myobj.route('/', methods=["GET","POST"])
 def home():
     if request.method == "POST":
-        text = request.form['text']
-        return text
+        message1 = request.form['text']
+        flash(message1)
 
     return render_template('home.html',
                            name = name,
