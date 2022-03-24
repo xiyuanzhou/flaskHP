@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     {% with message1 = get_flashed_messages() %}
-    <ul>
         {% if message1 %}
-            <li>{{ message1[0] }}</li>
+        <ul>
+            {% for i in message1 %}
+                <li>{{ i }}</li>
+            {% endfor %}
+        </ul>
         {% endif %}
-    </ul>
     {% endwith %}
     <h1>Welcome{{name}}!</h1>
 </head>
